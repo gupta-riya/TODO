@@ -3,11 +3,16 @@
   margin: 0;
 }
 
+body{
+  margin:0;
+  font-family: "Raleway", sans-serif;
+  background-color: whitesmoke;
+}
+
 .toolbar {
-  height: 12vh;
+  height: 11vh;
   background-color: #2d3436;
   display: flex;
-  height: 60px;
   align-items: center;
   padding-left: 5rem;
 }
@@ -17,7 +22,7 @@
   width: 12rem;
   margin-right: 4rem;
   border-radius: 0.2rem;
-  background-color: #6d7c7e;
+  background-color: #455556;
   display: flex;
 }
 
@@ -54,14 +59,14 @@
 .action-container {
   height: 55%;
   width: 7rem;
-  background-color: #6d7c7e;
+  background-color: #455556;
   border-radius: 0.2rem;
   display: flex;
   border-radius: 0.2rem solid;
   margin-left: 3rem;
 }
 
-.icon {
+.action-icon {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -71,8 +76,98 @@
 
 .main-container {
   background-color: whitesmoke;
-  height: 100vh;
-  width: 200vh;
-  margin-top: 3vh;
-  margin-left: 5vh;
+  height: 89vh;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  
+  
+}
+
+
+
+.modal_container{
+
+  position: absolute;
+  height: 50%;
+  width: 45%;
+  background-color: brown;
+  left:25%;
+  top: 30vh;
+  display: flex;
+
+}
+
+.input_container{
+  height: 100%;
+  width: 73%;
+  background-color: pink;
+}
+
+
+.modal_input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 2rem 3rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  line-height: 145%;        /* to increase height between lines */
+  font-weight: 400;
+  
+}
+
+.modal_filter_container{
+  width: 27%;
+  background-color: #455556;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.7rem 1.2rem;
+
+
+}
+
+
+.filter_task{
+  height: 15%;
+  width: 60%;
+
+}
+
+.border{
+  border: 0.2rem solid black;
+}
+
+/* task css */
+
+.uid{
+  color: #444;
+
+}
+
+.task_header_color{
+  height: 7%;
+}
+
+.task_container{
+
+  height: 10rem;
+  width: 16rem;
+  
+
+}
+
+.task_body{
+
+  padding-left:0.5rem;
+  background-color: white;
+  height: 100%;
+}
+
+.task_desc{
+  text-align: center;
 }
