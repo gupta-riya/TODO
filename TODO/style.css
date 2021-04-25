@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.toolbar {
+  height: 12vh;
+  background-color: #2d3436;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  padding-left: 5rem;
+}
+
+.color-bar {
+  height: 55%;
+  width: 12rem;
+  margin-right: 4rem;
+  border-radius: 0.2rem;
+  background-color: #6d7c7e;
+  display: flex;
+}
+
+.filter {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter_color {
+  height: 40%;
+  width: 45%;
+  border-radius: 0.3rem;
+}
+
+.palevioletred {
+  background-color: palevioletred;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.limegreen {
+  background-color: limegreen;
+}
+
+.black {
+  background-color: black;
+}
+
+.action-container {
+  height: 55%;
+  width: 7rem;
+  background-color: #6d7c7e;
+  border-radius: 0.2rem;
+  display: flex;
+  border-radius: 0.2rem solid;
+  margin-left: 3rem;
+}
+
+.icon {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.main-container {
+  background-color: whitesmoke;
+  height: 100vh;
+  width: 200vh;
+  margin-top: 3vh;
+  margin-left: 5vh;
+}
