@@ -6,7 +6,8 @@
 body{
   margin:0;
   font-family: "Raleway", sans-serif;
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
+  background: linear-gradient(30deg, #fdfcfb,#e2d1c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .toolbar {
@@ -22,7 +23,7 @@ body{
   width: 12rem;
   margin-right: 4rem;
   border-radius: 0.2rem;
-  background-color: #455556;
+  background-color: #535c68;
   display: flex;
 }
 
@@ -59,7 +60,7 @@ body{
 .action-container {
   height: 55%;
   width: 7rem;
-  background-color: #455556;
+  background-color:  #535c68;;
   border-radius: 0.2rem;
   display: flex;
   border-radius: 0.2rem solid;
@@ -75,7 +76,11 @@ body{
 }
 
 .main-container {
-  background-color: whitesmoke;
+  /* background: #8e9eab;  fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #fdfcfb , #e2d1c3);  Chrome 10-25, Safari 5.1-6 */
+  
+   
+  
   height: 89vh;
   padding-top: 2rem;
   padding-left: 3rem;
@@ -97,13 +102,16 @@ body{
   left:25%;
   top: 30vh;
   display: flex;
+  outline: none;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 1);
 
 }
 
 .input_container{
   height: 100%;
   width: 73%;
-  background-color: pink;
+  outline: none;
+
 }
 
 
@@ -115,7 +123,7 @@ body{
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
   line-height: 145%;        /* to increase height between lines */
-  font-weight: 400;
+  font-weight: 600;
   
 }
 
@@ -131,6 +139,10 @@ body{
 
 }
 
+textarea{
+  border: none;
+}
+
 
 .filter_task{
   height: 15%;
@@ -139,13 +151,15 @@ body{
 }
 
 .border{
-  border: 0.2rem solid black;
+  border: 0.2rem solid #d2dae2;
 }
 
 /* task css */
 
 .uid{
-  color: #444;
+  color: #778ca3;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
 
 }
 
@@ -155,19 +169,24 @@ body{
 
 .task_container{
 
-  height: 10rem;
-  width: 16rem;
-  
+  height: 9rem;
+  width: 18rem;
+  box-shadow: 0 1rem 1.5rem rgba(63, 55, 55, 0.2);
 
 }
 
 .task_body{
 
   padding-left:0.5rem;
-  background-color: white;
+  padding-top: 00.5rem;
+  background-color: #fdfdfd;
   height: 100%;
 }
 
 .task_desc{
   text-align: center;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+ 
 }
