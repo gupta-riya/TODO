@@ -172,7 +172,7 @@ textarea{
   height: 9rem;
   width: 18rem;
   box-shadow: 0 1rem 1.5rem rgba(63, 55, 55, 0.2);
-
+  
 }
 
 .task_body{
@@ -181,12 +181,19 @@ textarea{
   padding-top: 00.5rem;
   background-color: #fdfdfd;
   height: 100%;
+  
+ 
 }
 
+/* added contentediatble = true in script so that we can add in task conatiner also */
 .task_desc{
   text-align: center;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
- 
+  max-height: 85%;
+  overflow: auto;
+  word-break: break-all;
+  text-align: center;
+
 }

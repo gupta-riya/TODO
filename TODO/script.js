@@ -102,25 +102,30 @@ function addTask(color, text) {
     <div class="task_header_color ${color}"></div>
     <div class="task_body">
         <div class="uid">#exampleId</div>
-        <div class="task_desc">${text}</div>
+        <div contenteditable = "true" class="task_desc">${text}</div>
     </div>
     
     `
 
     document.querySelector(".main-container").appendChild(taskCont);
+    let taskHeader = taskCont.querySelector(".task_header_color");
+    taskHeader.addEventListener("click",changeColor);
+
 
 }
 
-function addTaskEvent() {
-    let taskcontainer = document.querySelectorAll(".task_container");
-    let taskHeader = document.querySelectorAll(".task_header_color");
-    for (let i = 0; i < taskcontainer.length; i++) {
-        taskHeader[i].addEventListener("click", function () {
+function changeColor(e) {
 
-            let currcolor = taskcontainer[i].children[0].classList.item(1);
-            taskcontainer[i].children[0].classList.remove(currcolor);
-            let randomIndex = Math.floor(Math.random() * 10) % 4;
-            taskcontainer[i].children[0].classList.add(availColors[randomIndex]);
-        })
-    }
+        // on which we are adding event listener
+        //console.log(e.currentTarget);
+
+        // on which the event is occuring
+        //console.log(e.target);
+
+        let taskHeader = e.currentTarget;   
+        let currcolor = taskHeader.classList[1];
+        let idx = availColors.indexOf(currcolor);
+        taskHeader.classList.remove(currcolor);
+       taskHeader.classList.add(availColors[(idx+1)%4]);
+    
 }
