@@ -75,6 +75,14 @@ body{
   color: whitesmoke;
 }
 
+
+.active{
+
+  background-color: #2d3436;
+
+
+}
+
 .main-container {
   /* background: #8e9eab;  fallback for old browsers */
   /* background: -webkit-linear-gradient(to right, #fdfcfb , #e2d1c3);  Chrome 10-25, Safari 5.1-6 */
@@ -135,6 +143,7 @@ body{
   justify-content: space-evenly;
   align-items: center;
   padding: 1.7rem 1.2rem;
+  
 
 
 }
@@ -147,7 +156,12 @@ textarea{
 .filter_task{
   height: 15%;
   width: 60%;
+  opacity: 0.7;
 
+}
+
+.filter_task:hover{
+  opacity: 1;
 }
 
 .border{
@@ -191,7 +205,7 @@ textarea{
   font-weight: 400;
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
-  max-height: 85%;
+  height: 85%;
   overflow: auto;
   word-break: break-all;
   text-align: center;
