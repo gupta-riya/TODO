@@ -12,6 +12,7 @@ body {
     #fdfcfb,
     #e2d1c3
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .toolbar {
@@ -64,21 +65,28 @@ body {
 .tooltiptext {
   visibility: hidden;
   width: 100px;
-  background-color:#204051;
+  background-color: #204051;
   color: #fff;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
   margin-top: 30px;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
 }
 
 .filter_color:hover .tooltiptext {
   visibility: visible;
 }
 
+.fa-sync-alt:hover .tooltiptext {
+  visibility: visible;
+}
+
 .action-container {
   height: 55%;
-  width: 7rem;
+  width: 6rem;
   background-color: #535c68;
   border-radius: 0.2rem;
   display: flex;
@@ -87,6 +95,18 @@ body {
 }
 
 .action-icon {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.refresh {
+  margin-left: 40rem;
+}
+
+.fa-sync-alt {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -103,11 +123,54 @@ body {
   /* background: -webkit-linear-gradient(to right, #fdfcfb , #e2d1c3);  Chrome 10-25, Safari 5.1-6 */
 
   height: 89vh;
-  padding-top: 2rem;
-  padding-left: 3rem;
+  /* padding-top: 2rem; */
+  padding-left: 2rem;
+  padding-right: 2rem;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+.all-task-container{
+
+  width: 75%;
+  height: 100%;
+  /* background-color: maroon; */
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+
+.completed-task-container{
+
+  width: 25%;
+  height: 100%;
+  background-color: blueviolet;
+  
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  flex-wrap: wrap;
+
+}
+
+.task-heading
+{
+  color: white;
+  margin-top: 10px;
+  font-size: 24px;
+  width: 100%;
+  height:fit-content;
+  text-align: center;
+ 
+}
+
+.completed-task-list{
+
+  margin-top: 2rem;
+
 }
 
 .modal_container {
@@ -169,37 +232,110 @@ textarea {
 
 /* task css */
 
-.uid {
-  color: #778ca3;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+
+
+.task_container {
+  height: 11rem;
+  width: 18rem;
+  box-shadow: 0 1rem 1.5rem rgba(63, 55, 55, 0.2);
 }
+
 
 .task_header_color {
   height: 7%;
 }
 
-.task_container {
-  height: 9rem;
-  width: 18rem;
-  box-shadow: 0 1rem 1.5rem rgba(63, 55, 55, 0.2);
-}
 
 .task_body {
   padding-left: 0.5rem;
   padding-top: 00.5rem;
   background-color: #fdfdfd;
-  height: 100%;
+  height: 93%;
 }
+
+.uid {
+  color: #778ca3;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  height: 15%;
+}
+
 
 /* added contentediatble = true in script so that we can add in task conatiner also */
 .task_desc {
   text-align: center;
-  font-weight: 400;
+  font-weight: 600;
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
-  height: 85%;
+  height: 65%;
   overflow: auto;
   word-break: break-all;
   text-align: center;
 }
+
+
+.task-footer{
+
+  height : 20%;
+  /* background-color: black; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.edit , .done{
+  width:50%;
+}
+
+.edit{
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.done{
+  text-align: right;
+  margin-right: 2rem;
+}
+
+.fa-pencil-alt{
+ 
+ 
+  color: #838383;
+  font-size: 20px;
+}
+
+.fa-check-circle{
+
+  font-size: 20px;
+  width: 50%;
+  color: #ad9d9d;
+}
+
+.tooltiptext2 {
+  visibility: hidden;
+  width: 120px;
+  background-color: #204051;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  margin-top: 10px;
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+
+.fa-check-circle:hover .tooltiptext2 {
+  visibility: visible;
+}
+
+.fa-pencil-alt:hover .tooltiptext2 {
+  visibility: visible;
+  width: 50px;
+}
+
+.fa-check-circle:hover , .fa-pencil-alt:hover{
+ color : #3b6978;
+} 

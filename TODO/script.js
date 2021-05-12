@@ -4,7 +4,10 @@
 let colorBtn = document.querySelectorAll(".filter");
 let mainCont = document.querySelector(".main-container");
 let plusButton = document.querySelector(".fa-plus");
-let crossButton = document.querySelector(".fa-times")
+let crossButton = document.querySelector(".fa-times");
+let refreshButton = document.querySelector(".fa-sync-alt");
+let allTaskCont = document.querySelector(".all-task-container");
+let completedTaskCont = document.querySelector(".completed-task-container");
 let body = document.body;
 let deleteState = false;
 let availColors = [];
@@ -32,8 +35,18 @@ for (let i = 0; i < colorBtn.length; i++) {
         // class list will give all the classes associated with the element
         //console.log(colorBtn[i].classList[1]);
         let color = colorBtn[i].children[0].classList[1];
+        let taskCont = document.querySelectorAll(".task_container");
+        for (let i = 0; i < taskCont.length; i++) {
 
-        
+            let clr = taskCont[i].children[0].classList[1];
+            if (clr == color) {
+                taskCont[i].style.display = "block";
+            }
+            else {
+                taskCont[i].style.display = "none";
+            }
+
+        }
 
 
     })
@@ -52,6 +65,15 @@ plusButton.addEventListener("click", function () {
 
 
 crossButton.addEventListener("click", setDeleteState);
+
+refreshButton.addEventListener("click", function () {
+
+    let taskCont = document.querySelectorAll(".task_container");
+    for (let i = 0; i < taskCont.length; i++) {
+        taskCont[i].style.display = "block";
+    }
+
+})
 
 function createModal() {
 
@@ -75,6 +97,7 @@ function createModal() {
     addModalEvents(modal_container);
 
 }
+
 
 function addModalEvents(modal_container) {
     let colorList = document.querySelectorAll(".modal_filter_container .filter_task");
@@ -123,12 +146,20 @@ function createTask(color, text, flag, id) {
     <div class="task_header_color ${color}"></div>
     <div class="task_body">
         <div class="uid">#${uid}</div>
-        <div contenteditable = "true" class="task_desc">${text}</div>
+        <div class="task_desc">${text}</div>
+        <div class="task-footer">
+            <div class="edit">
+            <i class="fas fa-pencil-alt"><p class="tooltiptext2">Edit</p></i>
+            </div>
+            <div class="done">
+            <i class="far fa-check-circle"><p class="tooltiptext2">Mark as complete</p></i>
+            </div>
+        </div>
     </div>
     
     `;
 
-    document.querySelector(".main-container").appendChild(taskCont);
+    document.querySelector(".all-task-container").appendChild(taskCont);
     let taskHeader = taskCont.querySelector(".task_header_color");
 
     if (flag == true) {
