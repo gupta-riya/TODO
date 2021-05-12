@@ -3,11 +3,15 @@
   margin: 0;
 }
 
-body{
-  margin:0;
+body {
+  margin: 0;
   font-family: "Raleway", sans-serif;
   /* background-color: whitesmoke; */
-  background: linear-gradient(30deg, #fdfcfb,#e2d1c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    30deg,
+    #fdfcfb,
+    #e2d1c3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .toolbar {
@@ -57,10 +61,25 @@ body{
   background-color: black;
 }
 
+.tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color:#204051;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  margin-top: 30px;
+}
+
+.filter_color:hover .tooltiptext {
+  visibility: visible;
+}
+
 .action-container {
   height: 55%;
   width: 7rem;
-  background-color:  #535c68;;
+  background-color: #535c68;
   border-radius: 0.2rem;
   display: flex;
   border-radius: 0.2rem solid;
@@ -75,67 +94,52 @@ body{
   color: whitesmoke;
 }
 
-
-.active{
-
+.active {
   background-color: #2d3436;
-
-
 }
 
 .main-container {
   /* background: #8e9eab;  fallback for old browsers */
   /* background: -webkit-linear-gradient(to right, #fdfcfb , #e2d1c3);  Chrome 10-25, Safari 5.1-6 */
-  
-   
-  
+
   height: 89vh;
   padding-top: 2rem;
   padding-left: 3rem;
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  
-  
 }
 
-
-
-.modal_container{
-
+.modal_container {
   position: absolute;
   height: 50%;
   width: 45%;
   background-color: brown;
-  left:25%;
+  left: 25%;
   top: 30vh;
   display: flex;
   outline: none;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 1);
-
 }
 
-.input_container{
+.input_container {
   height: 100%;
   width: 73%;
   outline: none;
-
 }
 
-
-.modal_input{
+.modal_input {
   height: 100%;
   width: 100%;
   outline: none;
   padding: 2rem 3rem;
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
-  line-height: 145%;        /* to increase height between lines */
+  line-height: 145%; /* to increase height between lines */
   font-weight: 600;
-  
 }
 
-.modal_filter_container{
+.modal_filter_container {
   width: 27%;
   background-color: #455556;
   display: flex;
@@ -143,64 +147,53 @@ body{
   justify-content: space-evenly;
   align-items: center;
   padding: 1.7rem 1.2rem;
-  
-
-
 }
 
-textarea{
+textarea {
   border: none;
 }
 
-
-.filter_task{
+.filter_task {
   height: 15%;
   width: 60%;
   opacity: 0.7;
-
 }
 
-.filter_task:hover{
+.filter_task:hover {
   opacity: 1;
 }
 
-.border{
+.border {
   border: 0.2rem solid #d2dae2;
 }
 
 /* task css */
 
-.uid{
+.uid {
   color: #778ca3;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-
 }
 
-.task_header_color{
+.task_header_color {
   height: 7%;
 }
 
-.task_container{
-
+.task_container {
   height: 9rem;
   width: 18rem;
   box-shadow: 0 1rem 1.5rem rgba(63, 55, 55, 0.2);
-  
 }
 
-.task_body{
-
-  padding-left:0.5rem;
+.task_body {
+  padding-left: 0.5rem;
   padding-top: 00.5rem;
   background-color: #fdfdfd;
   height: 100%;
-  
- 
 }
 
 /* added contentediatble = true in script so that we can add in task conatiner also */
-.task_desc{
+.task_desc {
   text-align: center;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
@@ -209,5 +202,4 @@ textarea{
   overflow: auto;
   word-break: break-all;
   text-align: center;
-
 }

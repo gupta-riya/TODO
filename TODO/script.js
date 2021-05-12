@@ -33,8 +33,7 @@ for (let i = 0; i < colorBtn.length; i++) {
         //console.log(colorBtn[i].classList[1]);
         let color = colorBtn[i].children[0].classList[1];
 
-
-        mainCont.setAttribute("style", "background-color: " + color + " ;");
+        
 
 
     })
