@@ -26,7 +26,7 @@ TODO application that provides the facility to create and delete task along with
   
    <img src = "readmeImages/Screenshot (55)_LI.jpg" width = 700 height = 500><br><br>
 2. <p>Create Task</p><br>
-   <img src = "Screenshot (56).png" width = 700 height = 500><br><br>
+   <img src = "readmeImages/Screenshot (56).png" width = 700 height = 500><br><br>
 
 3. <p>Task Added</p><br>
    <img src = "readmeImages/Screenshot (57).png" width = 700 height = 500><br><br>
