@@ -164,7 +164,7 @@ function addModalEvents(editText, taskcont) {
 
         // get local storage index of task container
         uidElem = taskcont.querySelector(".uid").innerText.split("#")[1];
-       
+
         for (let i = 0; i < taskArr.length; i++) {
             let { id } = taskArr[i];
             if (id == uidElem) {
@@ -377,24 +377,7 @@ function editTask(e) {
 
     let taskcont = e.currentTarget.parentNode.parentNode.parentNode.parentNode;
     createModal(true, taskcont);
-    // set complete as true
-    // let uidElem = taskcont.children[1].children[0];
-    // let color = taskcont.children[0].classList[1];
-    // let text = taskcont.children[1].children[1].innerText;
 
-    // let taskDesc = e.currentTarget;
-    // let uidElem = taskDesc.parentNode.children[0];
-    // let uid = uidElem.innerText.split("#")[1];
-    // for (let i = 0; i < taskArr.length; i++) {
-    //     let { id } = taskArr[i];
-    //     if (id == uid) {
-    //         taskArr[i].task = taskDesc.innerText;
-    //         let finalArr = JSON.stringify(taskArr);
-    //         localStorage.setItem("allTask", finalArr);
-
-    //         break;
-    //     }
-    // }
 }
 
 
