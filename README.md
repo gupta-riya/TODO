@@ -24,22 +24,22 @@ TODO application that provides the facility to create and delete task along with
 ### Snapshots - 
 1. <p>Priorities</p><br>
   
-   <img src = "readmeImage/Screenshot (55)_LI.jpg" width = 700 height = 500><br><br>
+   <img src = "readmeImages/Screenshot (55)_LI.jpg" width = 700 height = 500><br><br>
 2. <p>Create Task</p><br>
    <img src = "Screenshot (56).png" width = 700 height = 500><br><br>
 
 3. <p>Task Added</p><br>
-   <img src = "readmeImage/Screenshot (57).png" width = 700 height = 500><br><br>
+   <img src = "readmeImages/Screenshot (57).png" width = 700 height = 500><br><br>
    
 4. <p>Edit task and Change priority</p><br>
-   <img src = "readmeImage/Screenshot (58).png" width = 700 height = 500><br><br>
+   <img src = "readmeImages/Screenshot (58).png" width = 700 height = 500><br><br>
    
 5. <p>All tasks</p><br>
-   <img src = "readmeImage/Screenshot (59).png" width = 700 height = 500><br><br>
+   <img src = "readmeImages/Screenshot (59).png" width = 700 height = 500><br><br>
 
 6. <p>All tasks with green priority </p><br>
-   <img src = "readmeImage/Screenshot (60).png" width = 700 height = 500><br><br>
+   <img src = "readmeImages/Screenshot (60).png" width = 700 height = 500><br><br>
    
 7. <p>Completed Tasks</p><br>
-   <img src = "readmeImage/Screenshot (61).png" width = 700 height = 500><br><br>
+   <img src = "readmeImages/Screenshot (61).png" width = 700 height = 500><br><br>
 
